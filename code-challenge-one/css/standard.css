@@ -1,6 +1,7 @@
 nav{
 background-color: blue;
 display: flex;
+justify-content: center;
 }
 
 a {
@@ -8,7 +9,7 @@ color: cyan;
 margin: 10px;
 }
 
-p{
+.content {
     font-size: 14pt;
     font-style: italic;
 }
