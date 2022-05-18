@@ -1,9 +1,34 @@
 /* Custom Styles */
+body {
+  color: #273a6e;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+strong {
+  font-weight: 400;
+}
+
+cite,
+em {
+  font-style: italic;
+}
+
+a {
+  color: #6c89db
+}
+
+a:hover {
+  color: #a9b2b9
+}
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
 
 /* Grid */
 *,
 *::before,
-*::after{
+*::after {
   -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
       box-sizing: border-box;
@@ -20,7 +45,7 @@
     padding-right: 30px;
 }
 
-.col-1-3{
+.col-1-3 {
   width: 33.33%;
 }
 
@@ -41,10 +66,7 @@
   padding-right: 15px;
 }
 
-.container
-.grid {
-  margin: ;
-}
+
 
 /* Clearfix */
 .group::before,
@@ -53,7 +75,7 @@
   display: table;
 }
 
-.group::after{
+.group::after {
   clear: both;
 }
 
@@ -71,6 +93,38 @@
 h1, h3, h4, h5 p {
   margin-bottom: 22px;
 }
+
+h1, h2, h3, h4 {
+color: #6c89db;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 44px
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  color: #4568c9;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+
 
 /* Leads */
 
@@ -100,8 +154,19 @@ h1, h3, h4, h5 p {
   padding-right: 1em;
 }
 
+.tagline {
+  margin: 66px 0 22px 0;
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 /* Primary footer */
-.primary-footer{
+.primary-footer {
+  color: #6c89db;
+  font-size: 14px;
   padding-bottom: 44px;
   padding-top: 44px;
 }
@@ -112,6 +177,8 @@ h1, h3, h4, h5 p {
   font-weight: 400;
 }
 
+
+
 /* Navigation */
 
 
@@ -120,13 +187,18 @@ h1, h3, h4, h5 p {
     padding: 22px 80px 66px 80px;
 }
 
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 24px;
+}
 
 /* Speakers */
 
 
 /* Schedule */
-
-
 
 
 /* Venue */
