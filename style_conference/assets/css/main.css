@@ -2,28 +2,29 @@
 body {
   color: #273a6e;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+background-color: #11073fe3 ;
 }
 
-strong {
+/* strong {
   font-weight: 400;
 }
 
 cite,
 em {
   font-style: italic;
-}
+} */
 
-a {
-  color: #6c89db
+/* a {
+  color: #6c89db;
 }
 
 a:hover {
-  color: #a9b2b9
-}
-
+  color: #a9b2b9;
+} */
+/* 
 .teaser a:hover h3 {
   color: #a9b2b9;
-}
+} */
 
 /* Grid */
 *,
@@ -34,8 +35,7 @@ a:hover {
       box-sizing: border-box;
 }
 
-.container
-.grid {
+.container, .grid {
   margin: 0 auto;
   width: 960px;
 }
@@ -60,8 +60,7 @@ a:hover {
 }
 
 .grid,
-.col-1-3
-.col-2-3 {
+.col-1-3, .col-2-3 {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -87,10 +86,33 @@ a:hover {
 
 
 /* Rows */
+.row {
+  background: #fff;
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+}
+
+.row,
+.row-alt {
+  min-width: 960px;
+}
+
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+
+.row-alt {
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right,   #a1d3b0, #f6f1d3);
+  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  padding: 44px 0 22px 0;
+}
 
 
 /* Tyopeography */
-h1, h3, h4, h5 p {
+h1, h3, h4, h5, p {
   margin-bottom: 22px;
 }
 
@@ -100,12 +122,12 @@ color: #6c89db;
 
 h1 {
   font-size: 36px;
-  line-height: 44px
+  line-height: 44px;
 }
 
 h2 {
   font-size: 24px;
-  line-height: 44px
+  line-height: 44px;
 }
 
 h3 {
@@ -120,30 +142,78 @@ h5 {
   color: #4568c9;
   font-size: 14px;
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 400;
+}
+
+cite,
+em {
+  font-style: italic;
 }
 
 
 
-
-
 /* Leads */
+.lead {
+  text-align: center;
+}
+
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+
 
 
 /* Links */
+a {
+  color: #6c89db;
+}
+
+a:hover {
+  color: #a9b2b9;
+}
+
+a {
+  color: #6c89db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a9b2b9;
+}
+
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
 
 
 
 /* Buttons */
 .btn {
     border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
     display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5px;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .btn-alt {
-    border: 1px solid #dfe2e5;
+    border: 1px solid #fff;
     padding: 10px 30px;
 }
+
+.btn-alt:hover {
+  background: #fff;
+  color: #647188;
+}
+
 
 /* Primary header */
 .logo {
@@ -161,7 +231,24 @@ h5 {
 .primary-nav {
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
+
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+
+.primary-header a {
+  color: #fff;
+}
+
+.primary-header a:hover {
+  color: #a9b2b9;
+}
+
+
 
 /* Primary footer */
 .primary-footer {
@@ -172,19 +259,30 @@ h5 {
 }
 
 .primary-footer small {
-
   float: left;
   font-weight: 400;
 }
 
+.primary-footer a {
+  color: #fff;
+}
+
+.primary-footer a:hover {
+  color: #a9b2b9;
+}
 
 
 /* Navigation */
-
+.nav {
+  text-align: right;
+}
 
 /* Home */
 .hero {
+  color: #fff;
     padding: 22px 80px 66px 80px;
+    line-height: 44px;
+    text-align: center;
 }
 
 .hero h2 {
@@ -193,6 +291,12 @@ h5 {
 
 .hero p {
   font-size: 24px;
+  font-weight: 100;
+}
+
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
 }
 
 /* Speakers */
